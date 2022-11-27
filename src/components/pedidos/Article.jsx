@@ -19,10 +19,7 @@ const Article = (pedidoInfo) => {
                             <span className='spanDato'>{infoPedido.location}</span>
                         </div>
 
-                        <div className="detalle">
-                            <h3 className='h3-project'>Costo:</h3>
-                            <span className='spanDato'>{infoPedido.cost} usd</span>
-                        </div>
+    
                         <div className="detalle">
                             <h3 className='h3-project'>Diseñado por:</h3>
                             <span className='spanDato'>{infoPedido.designer}</span>
@@ -30,6 +27,10 @@ const Article = (pedidoInfo) => {
                         <div className="detalle">
                             <h3 className='h3-project'>Fabricado por:</h3>
                             <span className='spanDato'>{infoPedido.maker}</span>
+                        </div>
+                        <div className="detalle">
+                            <h3 className='h3-project'>Fecha de entrega:</h3>
+                            <span className='spanDato'>{infoPedido.finishdate}</span>
                         </div>
 
                     </div>

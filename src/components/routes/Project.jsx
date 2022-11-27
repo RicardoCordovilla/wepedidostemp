@@ -15,7 +15,7 @@ const Project = () => {
 
     useEffect(() => {
         // const urlPedidos = `http://localhost:9000/api/v1/orders/${phoneSearch}`
-        const urlPedidos = `https://neonquitoorders-crud-api-production.up.railway.app/api/v1/orders/${phoneSearch}`
+        const urlPedidos = `https://neonquitoorders-crud-api-production-e4f5.up.railway.app/api/v1/orders/${phoneSearch}`
         console.log(urlPedidos)
         axios.get(urlPedidos)
             .then(res => {
