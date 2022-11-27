@@ -59,23 +59,23 @@ const Article = (pedidoInfo) => {
                     <section className='footer-icons-container'>
                         <img
                             className='article_footer-icon'
-                            src={`./public/icon-design.${infoPedido.process==1?'gif':'png'}`}
+                            src={`./icon-design.${infoPedido.process==1?'gif':'png'}`}
                         />
                         <img
                             className='article_footer-icon'
-                            src={`./public/icon-laser.${infoPedido.process==2?'gif':'png'}`}
+                            src={`./icon-laser.${infoPedido.process==2?'gif':'png'}`}
                         />
                         <img
                             className='article_footer-icon'
-                            src={`./public/icon-construction.${infoPedido.process==3?'gif':'png'}`}
+                            src={`./icon-construction.${infoPedido.process==3?'gif':'png'}`}
                         />
                         <img
                             className='article_footer-icon'
-                            src={`./public/icon-conecting.${infoPedido.process==4?'gif':'png'}`}
+                            src={`./icon-conecting.${infoPedido.process==4?'gif':'png'}`}
                         />
                         <img
                             className='article_footer-icon'
-                            src={`./public/icon-shipping.${infoPedido.process==5?'gif':'png'}`}
+                            src={`./icon-shipping.${infoPedido.process==5?'gif':'png'}`}
                         />
 
                     </section>
