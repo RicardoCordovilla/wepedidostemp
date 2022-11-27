@@ -38,7 +38,8 @@ const Project = () => {
                 <Searcher
                     setPhoneSearch={setPhoneSearch}
                 />
-                <h1>PEDIDOS</h1>
+                <h5>PEDIDOS</h5>
+                <span>Aquí se mostrarán tus pedidos</span>
             </div>
 
             <div className="articlesContainer">
