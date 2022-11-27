@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+:root {
+    --color-azul: #000028;
+    --color-amarillo: #CCFF02;
+    --color-amarillo-primary: #CCFF02;
+    --color-amarillo-second: #ff7300;
+    --color-amarillo-tetrad: #0dff33;
+    --color-amarillo-accent: #3300f0;
+    --color-sombra: #000020;
+    --color-fondo: rgba(0, 0, 255, 0.15);
+    --color-tercero: rgb(255, 255, 255);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    line-height: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+    color: #789
+}
+
+.project {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.h3-project {
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 0rem;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(56, 55, 79)
+}
+
+
+.searcherheader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0.5em;
+    width: 100%;
+    z-index: 3;
+    background-color: #cdf;
+    box-shadow: 0 0 10px 1px  #222;
+
+}
+
+
+.searchBx{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1em;
+    padding: 0.2em 0.4em;
+    justify-content: center;
+}
+
+.inputSearch {
+    font-size: 1rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 8px;
+}
+
+
+.articlesContainer {
+    /* overflow-y: scroll; */
+    margin-top: 12em;
+    margin-bottom: 5em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* height: 100vh; */
+    gap: 1em;
+}
+
+.pedidoContainer {
+    position: relative;
+    margin-top: 1em;
+    width: 400px;
+    height: fit-content;
+    max-width: 90vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    border: 1px solid #888;
+    border-radius: 12px;
+    box-shadow: 0 0 8px 1px #ccc;
+    background-color: rgb(147, 162, 247);
+
+}
+
+.spanTitle {
+    padding: 0.3em 0.6em;
+    color: #000028;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #000020;
+    background-color: rgb(124, 133, 215);
+    border-radius: 12px 12px 0 0;
+}
+
+.articleBody {
+    display: flex;
+    flex-direction: row;
+}
+
+.spanDato {
+    margin-left: 0.5rem;
+    color: #222;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+
+.asideArticle {
+    /* width: 20%; */
+    border-left: 1px solid #000020;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-content: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.asideItemBx {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    text-decoration: none;
+}
+
+.asideSpan {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    text-decoration: underline;
+}
+
+.asideicon {
+    font-size: 2.5rem;
+    text-decoration: none;
+}
+
+.icon-text {
+    text-decoration: none;
+}
+
+.descriptionBx {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5em;
+    padding: 1em;
+}
+
+.detalle {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    line-height: 1.5rem;
+}
+
+
+.articleFooter {
+    padding: 0.3em 0.6em;
+    color: #000028;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 100%;
+    /* height: 100px; */
+    text-align: center;
+    font-size: 1.5rem;
+    border-top: 2px solid #999;
+    border-radius: 0 0 12px 12px;
+    display: flex;
+    flex-direction: column;
+    background-color: #cca;
+
+}
+
+.progress {
+    height: 30px;
+    width: 90%;
+    align-self: center;
+}
+
+.footer-icons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.article_footer-icon {
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+}

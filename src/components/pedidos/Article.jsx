@@ -1,0 +1,89 @@
+import React from 'react'
+
+const Article = (pedidoInfo) => {
+
+    const infoPedido = pedidoInfo.pedidoInfo
+    console.log(infoPedido)
+    return (
+        <div className="projects">
+            <div className='pedidoContainer'>
+                <span className='spanTitle'>{infoPedido.title}</span>
+                <div className="articleBody">
+                    <div className="descriptionBx">
+                        <div className="detalle">
+                            <h3 className='h3-project'>Descripción:</h3>
+                            <span className='spanDato'>{infoPedido.description}</span>
+                        </div>
+                        <div className="detalle">
+                            <h3 className='h3-project'>Ubicación:</h3>
+                            <span className='spanDato'>{infoPedido.location}</span>
+                        </div>
+
+                        <div className="detalle">
+                            <h3 className='h3-project'>Costo:</h3>
+                            <span className='spanDato'>{infoPedido.cost} usd</span>
+                        </div>
+                        <div className="detalle">
+                            <h3 className='h3-project'>Diseñado por:</h3>
+                            <span className='spanDato'>{infoPedido.designer}</span>
+                        </div>
+                        <div className="detalle">
+                            <h3 className='h3-project'>Fabricado por:</h3>
+                            <span className='spanDato'>{infoPedido.maker}</span>
+                        </div>
+
+                    </div>
+
+                    <aside className='asideArticle'>
+                        <div className="">
+                            <h4 className=''>Garantía:</h4>
+                            <span href="pdf garantía" target="_blank" className="asideItemBx">
+                                <i className='bx bx-file asideicon'></i>
+                                {/* <span className='asideSpan'>Ver <i className='bx bx-right-top-arrow-circle icon-text'></i></span> */}
+                                <span className=''>12 meses</span>
+                                
+                            </span>
+                        </div>
+                        <div className="">
+                            <h4 className=''>Foto:</h4>
+                            <a href={infoPedido.imageurl} target="_blank" className="asideItemBx">
+                                <i className='bx bx-image asideicon'></i>
+                                <span className='asideSpan'>Ver <i className='bx bx-right-top-arrow-circle icon-text'></i></span>
+                            </a>
+                        </div>
+                    </aside>
+                </div>
+                <footer className="articleFooter">
+                    <h6>Etapa:</h6>
+                    <input className='progress' type="range" min={1} max={5} value={infoPedido.process} defaultValue={1} readOnly={true}/>
+                    <section className='footer-icons-container'>
+                        <img
+                            className='article_footer-icon'
+                            src={`./public/icon-design.${infoPedido.process==1?'gif':'png'}`}
+                        />
+                        <img
+                            className='article_footer-icon'
+                            src={`./public/icon-laser.${infoPedido.process==2?'gif':'png'}`}
+                        />
+                        <img
+                            className='article_footer-icon'
+                            src={`./public/icon-construction.${infoPedido.process==3?'gif':'png'}`}
+                        />
+                        <img
+                            className='article_footer-icon'
+                            src={`./public/icon-conecting.${infoPedido.process==4?'gif':'png'}`}
+                        />
+                        <img
+                            className='article_footer-icon'
+                            src={`./public/icon-shipping.${infoPedido.process==5?'gif':'png'}`}
+                        />
+
+                    </section>
+                </footer>
+
+            </div>
+        </div>
+    )
+}
+
+export default Article
