@@ -26,14 +26,14 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path='/*' element={<Home />} />
-        <Route path='/' element={<Home />} />
-        <Route path='/login' element={<Login />} />
-        <Route path='/design' element={<Design />} />
+        {/* <Route path='/*' element={<Home />} /> */}
+        {/* <Route path='/' element={<Home />} /> */}
+        {/* <Route path='/login' element={<Login />} /> */}
+        {/* <Route path='/design' element={<Design />} /> */}
         {/* <Route element={<ProtectedRoutes />}> */}
-          <Route path='/a' element={<Project />} />
+          <Route path='/*' element={<Project />} />
         {/* </Route> */}
-        <Route path='/catalog' element={<Catalog />} />
+        {/* <Route path='/catalog' element={<Catalog />} /> */}
       </Routes>
 
     </div>
