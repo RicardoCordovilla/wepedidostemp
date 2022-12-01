@@ -19,7 +19,7 @@ const Article = (pedidoInfo) => {
                             <span className='spanDato'>{infoPedido.location}</span>
                         </div>
 
-    
+
                         <div className="detalle">
                             <h3 className='h3-project'>Diseñado por:</h3>
                             <span className='spanDato'>{infoPedido.designer}</span>
@@ -42,7 +42,7 @@ const Article = (pedidoInfo) => {
                                 <i className='bx bx-file asideicon'></i>
                                 {/* <span className='asideSpan'>Ver <i className='bx bx-right-top-arrow-circle icon-text'></i></span> */}
                                 <span className=''>12 meses</span>
-                                
+
                             </span>
                         </div>
                         <div className="">
@@ -56,28 +56,31 @@ const Article = (pedidoInfo) => {
                 </div>
                 <footer className="articleFooter">
                     <h6>Etapa:</h6>
-                    <input className='progress' type="range" min={1} max={5} value={infoPedido.process} defaultValue={1} readOnly={true}/>
+                    <input className='progress' type="range" min={1} max={3} value={infoPedido.process} defaultValue={1} readOnly={true} />
                     <section className='footer-icons-container'>
-                        <img
-                            className='article_footer-icon'
-                            src={`./icon-design.${infoPedido.process==1?'gif':'png'}`}
-                        />
-                        <img
-                            className='article_footer-icon'
-                            src={`./icon-laser.${infoPedido.process==2?'gif':'png'}`}
-                        />
-                        <img
-                            className='article_footer-icon'
-                            src={`./icon-construction.${infoPedido.process==3?'gif':'png'}`}
-                        />
-                        <img
-                            className='article_footer-icon'
-                            src={`./icon-conecting.${infoPedido.process==4?'gif':'png'}`}
-                        />
-                        <img
-                            className='article_footer-icon'
-                            src={`./icon-shipping.${infoPedido.process==5?'gif':'png'}`}
-                        />
+                        <div className="article_footer-iconBx">
+                            <img
+                                className='article_footer-icon'
+                                src={`./icon-design.${infoPedido.process == 1 ? 'gif' : 'png'}`}
+                            />
+                            <h6 className='h6'>Diseño</h6>
+                        </div>
+
+                        <div className="article_footer-iconBx">
+                            <img
+                                className='article_footer-icon'
+                                src={`./icon-laser.${infoPedido.process == 2 ? 'gif' : 'png'}`}
+                            />
+                            <h6 className='h6'>Fabricación</h6>
+                        </div>
+
+                        <div className="article_footer-iconBx">
+                            <img
+                                className='article_footer-icon'
+                                src={`./icon-shipping.${infoPedido.process == 3 ? 'gif' : 'png'}`}
+                            />
+                            <h6 className='h6'>Entrega</h6>
+                        </div>
 
                     </section>
                 </footer>
